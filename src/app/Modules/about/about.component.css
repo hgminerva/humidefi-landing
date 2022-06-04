@@ -1,0 +1,39 @@
+
+.about-html {
+    height:100vh;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    box-shadow:  0 0 3px gray;
+    background-color: white; 
+    max-width: 80%;
+    padding: 50px;
+    margin: auto;
+    margin-top: 60px;
+    line-height: 2;
+    font-size: larger;
+}
+.php {
+    color: rgb(245, 19, 57);
+    font-weight: bolder;
+}
+.title{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bolder;
+}
+li{
+    margin: auto;
+    width: 40%;
+}
+.bold{
+    font-weight: bolder;
+}
+
+@media screen and (max-width:390px) {
+    .title{
+        font-size: 40px;
+    }
+}

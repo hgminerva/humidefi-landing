@@ -1,0 +1,17 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+.footer-toolbar{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,red,rgb(105, 23, 105));
+}
+.icon {
+    height: 50px;
+}
+.footer-title{
+    color: white;
+    text-shadow: 1px 1.5px 2px black;
+}

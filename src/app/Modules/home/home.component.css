@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.mat-toolbar {
+    justify-content: space-between;
+    background: linear-gradient(to right,red,rgb(105, 23, 105));
+
+}
+.banner {
+    width: 200px;
+}
+.toolbar-menu{
+    color: white;
+    text-shadow: 1px 1.5px 2px black;
+}
+@media screen and (max-width:600px) {
+    .test {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #menu {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+<mat-toolbar class="mat-toolbar">
+  <img  class="banner" src="./assets/images/humidefi_5.png">
+    <div  class="test">
+    <button class="toolbar-menu" mat-button (click)="moveToHome()">Home</button>
+    <button class="toolbar-menu" mat-button (click)="moveToAbout()">About</button>
+    <button class="toolbar-menu" mat-button (click)="moveToTokens()">Tokens</button>
+    <button class="toolbar-menu" mat-button [matMenuTriggerFor]="tech">Technology<mat-icon>keyboard_arrow_down</mat-icon></button>
+      <mat-menu #tech="matMenu">
+        <button mat-menu-item (click)="moveToWeb3()">Web 3</button>
+        <button mat-menu-item (click)="moveToStack()">Stack</button>
+      </mat-menu>
+    <button class="button">App</button>
+    </div>
+
+    <div id="menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+            <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="moveToAbout()">
+              <mat-icon>question_answer</mat-icon>
+              <span>About</span>
+        </button>
+            <button mat-menu-item (click)="moveToTokens()">
+              <mat-icon>donut_small</mat-icon>
+              <span>Tokens</span>
+            </button>
+            <button mat-menu-item (click)="moveToWeb3()">
+                <mat-icon>vpn_lock</mat-icon>
+                <span>Web 3</span>
+              </button>
+              <button mat-menu-item (click)="moveToStack()">
+                <mat-icon>event_note</mat-icon>
+                <span>Stack</span>
+              </button>
+          </mat-menu>
+    </div>
+</mat-toolbar>
+
