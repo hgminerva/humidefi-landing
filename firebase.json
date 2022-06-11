@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "humidefi-landing",
+    "public": "dist/humidefier-ui",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
