@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +8,6 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   option:boolean=true;
-
   panelOpenState:boolean = false;
 
   constructor(private router : Router) { }
@@ -34,4 +34,9 @@ export class HomeComponent implements OnInit {
   moveToWeb3() {
     this.router.navigate(['/web3']);
   }
+
+  moveToApp() {
+    window.open("https://app.humidefi.com", "_blank");
+  }
+
 }

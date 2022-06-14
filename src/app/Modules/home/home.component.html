@@ -1,39 +1,193 @@
-<mat-toolbar class="mat-toolbar">
-  <img  class="banner" src="./assets/images/humidefi_5.png">
-    <div  class="test">
-    <button class="toolbar-menu" mat-button (click)="moveToHome()">Home</button>
-    <button class="toolbar-menu" mat-button (click)="moveToAbout()">About</button>
-    <button class="toolbar-menu" mat-button (click)="moveToTokens()">Tokens</button>
-    <button class="toolbar-menu" mat-button [matMenuTriggerFor]="tech">Technology<mat-icon>keyboard_arrow_down</mat-icon></button>
-      <mat-menu #tech="matMenu">
-        <button mat-menu-item (click)="moveToWeb3()">Web 3</button>
-        <button mat-menu-item (click)="moveToStack()">Stack</button>
-      </mat-menu>
-    <button class="button">App</button>
-    </div>
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+  <div class="container">
+      <a class="navbar-brand" href="#page-top">Humidefi</a>
+      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">About</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Tokens</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Technology</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Community</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://app.humidefi.com">App</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
-    <div id="menu">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-            <mat-icon>menu</mat-icon>
-        </button>
-            <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="moveToAbout()">
-              <mat-icon>question_answer</mat-icon>
-              <span>About</span>
-        </button>
-            <button mat-menu-item (click)="moveToTokens()">
-              <mat-icon>donut_small</mat-icon>
-              <span>Tokens</span>
-            </button>
-            <button mat-menu-item (click)="moveToWeb3()">
-                <mat-icon>vpn_lock</mat-icon>
-                <span>Web 3</span>
-              </button>
-              <button mat-menu-item (click)="moveToStack()">
-                <mat-icon>event_note</mat-icon>
-                <span>Stack</span>
-              </button>
-          </mat-menu>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="assets/images/template/game.png" alt="..." />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Humidefi</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Decentralized Financed Hub of UMI and PHPU</p>
     </div>
-</mat-toolbar>
+</header>
+
+<!-- About Section-->
+<section class="page-section" id="about">
+    <div class="container">
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 ms-auto">
+                    <h2>DeFi hub for UMI and PHPU (Collateralized Philippine Peso Stable Coin)</h2>
+                    <h2>Bridge for Acala aUSD and Polkadot DOT tokens</h2>
+                    <h2>Governance and Validator Staking</h2>
+                    <h2>Smart Contract Management – Fungible (Token) and Non-fungible (NFT)</h2>
+                </div>
+                <div class="col-lg-2 me-auto">
+                    <img class="masthead-avatar mb-5" style="height:50px" src="assets/images/acala.png" alt="..." />
+                    <img class="masthead-avatar mb-5" style="height:50px" src="assets/images/polkadot.png" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-8 ms-auto  justify-content-left">
+                <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Tokens</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="text-center col-lg-4 ms-auto">
+                <img class="masthead-avatar mb-5" style="height:100px" src="assets/images/umi.png" alt="..." />
+                <p class="lead">UMI</p>
+                <p class="lead">Native token of the UMI/Humidefi network</p>
+            </div>
+            <div class="text-center col-lg-4 me-auto">
+                <img class="masthead-avatar mb-5" style="height:100px" src="assets/images/phpu.png" alt="..." />
+                <p class="lead">PHPU</p>
+                <p class="lead">Collateralized Philippine peso stable coin</p>
+            </div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="#">
+                <i class="fas fa-download me-2"></i>
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p class="lead mb-0">
+                    Cebu City
+                    <br />
+                    Philippines, 6000
+                </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">About Humidefi</h4>
+                <p class="lead mb-0">
+                    Humidefi is a ommunity based blockchain network that provides decentralized finance for everyone.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright Section-->
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; Humidefi 2022</small></div>
+</div>
+
+
 
