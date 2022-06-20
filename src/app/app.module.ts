@@ -15,6 +15,8 @@ import { MatGridListModule} from '@angular/material/grid-list';
 
 import { HomeComponent } from './Modules/home/home.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { HomeComponent } from './Modules/home/home.component';
     MatExpansionModule,
     MatMenuModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
