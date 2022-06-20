@@ -11502,3 +11502,114 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* ** CSS mod** */
+.n-h1{
+  font-weight: 100 !important;
+  font-size: 45px !important;
+  line-height: 55px !important;
+}
+.n-h2{
+  font-weight: 100 !important;
+  color:#fff;
+  font-size: 22px !important;
+  line-height: 35px !important;
+}
+p{font-size:17px;}
+.n-gradient{
+  background: linear-gradient(55deg, rgba(244,60,113,1) 0%, rgba(197,127,40,1) 68%, rgba(240,73,65,1) 100%);
+  background-size: 400% 400%;
+  animation: ngradient 45s ease infinite;
+}
+@keyframes ngradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#mainNav{
+  background: linear-gradient(90deg, rgba(244,60,113,1) 0%, rgba(240,73,65,1) 100%);
+}
+#mainNav .nav-link:hover{color:#fff !important; opacity: 0.8;}
+.n-top-strip{
+  background: rgb(244,60,113);
+  background: linear-gradient(90deg, rgba(244,60,113,1) 0%, rgba(160,12,192,1) 41%, rgba(240,73,65,1) 100%);
+  min-height: 10px;
+  max-height: 10px;
+  width: 100%;
+  position:fixed;
+  top: 0px;
+  z-index: 9999;
+}
+.nav-offset{
+  top: 10px !important;
+  background: #ffffff;
+}
+.n-nav-logo{
+  max-height: 55px;
+}
+.n-hero-section{
+  background: #fff;
+  margin-top: 113px;
+}
+.mn-btn{
+  border-radius: 35px;
+  padding: 22px 35px;
+  font-size:28px;
+  color: #f24454;
+  border: 2px solid #f24454;
+  text-decoration: none;
+  display: inline-block;
+}
+.sec-btn-light{
+  border-radius: 35px;
+  padding: 18px 28px;
+  font-size:22px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.mn-btn:hover{
+  color:#f24454;
+  opacity: 0.8;
+}
+.sec-btn-light:hover{
+  color:#fff;
+  opacity: 0.8;
+}
+.n-acala img{
+  margin-bottom: 15px;
+  max-width: 35%;
+  margin-right:2px;
+  border-radius: 50%;
+}
+.n-gold-strip{
+  background: rgb(220,154,11);
+  background: linear-gradient(55deg, rgba(220,154,11,1) 0%, rgba(255,255,220,1) 9%, rgba(220,154,11,1) 32%, rgba(255,255,220,1) 43%, rgba(254,241,138,1) 44%, rgba(220,154,11,1) 68%);
+  height: 10px;
+
+}
+.n-divi{
+  height: 35px;
+  width: auto;
+  margin:0px;
+  background-repeat: no-repeat !important;
+  margin-bottom: 25px;
+}
+.mn-form input, textarea{
+  border-radius: 35px !important;
+  padding: 22px 35px !important;
+  font-size:28px !important;
+}
+.mn-form label{
+  margin-left:25px;
+}
+.n-copyright{
+  background: linear-gradient(90deg, rgba(244,60,113,1) 0%, rgba(240,73,65,1) 100%);
+}
