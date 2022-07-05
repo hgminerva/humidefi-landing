@@ -1,0 +1,7 @@
+.w3r-dot {
+    background-color:  #ccc;
+    background-image: radial-gradient(#000 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+  }
