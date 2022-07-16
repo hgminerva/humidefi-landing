@@ -11515,6 +11515,12 @@ html {
   font-size: 22px !important;
   line-height: 35px !important;
 }
+.n-h3{
+  font-weight: 100 !important;
+  color:#fff;
+  font-size: 15px !important;
+  line-height: 35px !important;
+}
 p{font-size:17px;}
 .n-gradient{
   background: linear-gradient(55deg, rgba(244,60,113,1) 0%, rgba(197,127,40,1) 68%, rgba(240,73,65,1) 100%);
